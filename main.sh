@@ -1,12 +1,9 @@
 #!/bin/bash
 echo "Resetting Windows Explorer Service"
-net stop explorer
-net start explorer
+taskkill /im explorer.exe /f
+start explorer.exe
 
-sleep 10
+sleep 3
 
 echo "Resetting Windows Explorer Service Complete"
-
-sleep 2
-
 
